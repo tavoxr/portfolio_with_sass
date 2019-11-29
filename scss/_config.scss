@@ -1,11 +1,13 @@
 $primary-color: #444;
-$secondary-color: #eece1a;
+$secondary-color: #09c7a7;
 $show-home-image: true;
 $home-image: url(
      'https://o0o0sm3y25-flywheel.netdna-ssl.com/wp-content/uploads/2018/05/iphone-notes-1-696x385.jpg'
     /*'https://www.setaswall.com/wp-content/uploads/2017/03/Macbook-Apple-Computer-Wallpaper-1920x1080.jpg'*/
 );
 $background-opacity: 0.6;
+
+
 @mixin easeOut{
     transition: all 0.5s ease-out;
 }

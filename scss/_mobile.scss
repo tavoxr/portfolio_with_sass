@@ -5,7 +5,12 @@
 
 //Desktops & Laptops
 @include mediaLg{
+    .bio-img{
+        width: 83%;
+        
+        
     
+    }
 }
 
 // Tablets & Small Laptops
@@ -45,6 +50,15 @@
         width: 125px;
         height:125px;
     }    
+    }
+    .about-info{
+        grid-template-areas: 
+        'bioimage'
+        'bio'
+        'skills'
+        'strenghs';
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
     }
 }
 

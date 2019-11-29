@@ -36,6 +36,18 @@ $home-portrait-img: url('https://scontent.fgua3-2.fna.fbcdn.net/v/t1.0-9/1101218
     }
 }
 
+//Set Text Color
+@function set-text-color($color){
+    @if(lightness($color) > 40){
+        @return #000;
+
+    }@else{
+        @return #fff;
+    }
+
+}
+
+
 
 //Media Query Mixins
 @mixin mediaSm {

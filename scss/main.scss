@@ -116,6 +116,107 @@ main{
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
+    display: flex;
+    justify-content: center;
+}
+
+//skills circles
+.skills-container{
+    
+
+
+    
+    
+    width: 80%;
+}
+.skills li{
+    margin: 20px 0;    
+}
+
+.bar{
+    background: #353b48;
+    display: block;
+    height: 2px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #2187e7b3;
+}
+
+.bar span{
+    height: 2px;
+    float: left;
+    
+    background: greenyellow;
+
+}
+
+
+.html{
+    width: 90%;
+    animation: html 2s;
+}
+
+.css{
+    width: 85%;
+    animation: css 2s;
+}
+
+.javascript{
+    width: 75%;
+    animation: javascript 2s;
+}
+
+.react{
+    width: 70%;
+    animation: react 2s;
+}
+
+.node{
+    width: 60%;
+    animation: node 2s;
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:   85%;
+    }
+}
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+@keyframes react{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes node{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
 }
 
 
@@ -136,6 +237,8 @@ main{
     color: set-text-color($primary-color);
     height: 60px;
 }
+
+
 
 
 @import 'mobile';

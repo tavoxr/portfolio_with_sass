@@ -73,9 +73,32 @@
         </div>
 
         <div class="skills">
+            <div class="skills-container">
             <h3 >
                 Skills
             </h3>
+
+            <li>
+                <h3>HTML5</h3><span class="bar" ><span class="html"></span></span>
+            </li>
+
+            <li>
+                <h3>CSS3</h3><span class="bar" ><span class="css"></span></span>
+            </li>
+
+            <li>
+                <h3>JAVASCRIPT</h3><span class="bar" ><span class="javascript"></span></span>
+            </li>
+            
+            <li>
+                <h3>REACT</h3><span class="bar" ><span class="react"></span></span>
+            </li>
+            
+            <li>
+                <h3>NODEJS</h3><span class="bar" ><span class="node"></span></span>
+            </li>
+
+        </div>
 
         </div>
         <div class="strenghs">
@@ -92,6 +115,20 @@
     Copyright &copy; 2019
 </footer>
 
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script src="./js/jquery.easypiechart.js"></script>
+
 <script src="./js/main.js" ></script>
+<script>
+        $(function() {
+            $('.chart').easyPieChart({
+                //your options goes here
+            });
+        });
+    </script>
 </body>
 </html>

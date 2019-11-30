@@ -118,108 +118,124 @@ main{
     border-bottom: $secondary-color 5px solid;
     display: flex;
     justify-content: center;
+    flex-flow: column;
+
+
+    
 }
+
 
 //skills circles
-.skills-container{
-    
 
-
-    
-    
-    width: 80%;
-}
-.skills li{
-    margin: 20px 0;    
-}
-
-.bar{
-    background: #353b48;
-    display: block;
-    height: 2px;
-    border: 1px solid rgba(0,0,0,0.3);
-    border-radius: 3px;
-    overflow: hidden;
-    box-shadow: 0 0 10px #2187e7b3;
-}
-
-.bar span{
-    height: 2px;
-    float: left;
-    
-    background: greenyellow;
-
-}
-
-
-.html{
+.container {
+    margin: 15px auto;
     width: 90%;
-    animation: html 2s;
-}
+    text-align: center;
+    font-size: 0.8em;
+    display: grid;
+    grid-template-columns: 1fr 4fr 0.5fr;
+    grid-template-rows:  auto;
+    grid-template-areas: none
+        "skills-label progress2 percent"    
+    ;
 
-.css{
-    width: 85%;
-    animation: css 2s;
-}
+  }
+  
+   
+  .progress2 {
+      
+    padding: 6px;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.25);  
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+  }
+  
+  .progress-bar2 {
+    height: 12px;
+    border-radius: 30px;
+    background-image: 
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    transition: 0.4s linear;  
+    transition-property: width, background-color;    
+  }
+  
+  .progress-moved .progress-bar2.html {
+    width: 85%; 
+    background-color: $orange;  
+    font-size: 12px;
 
-.javascript{
-    width: 75%;
-    animation: javascript 2s;
-}
-
-.react{
-    width: 70%;
-    animation: react 2s;
-}
-
-.node{
-    width: 60%;
-    animation: node 2s;
-}
-
-@keyframes html{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 90%;
-    }
-}
-
-@keyframes css{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width:   85%;
-    }
-}
-@keyframes javascript{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 75%;
-    }
-}
-@keyframes react{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 70%;
-    }
-}
-@keyframes node{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 60%;
-    }
-}
-
-
+    animation: progressAnimationHTML 6s;
+  }
+  
+  @keyframes progressAnimationHTML {
+    0%   { width: 5%; background-color: $orange;}
+    100% { width: 85%; background-color: $orange; }
+  }
+  
+  .progress-moved .progress-bar2.css{
+    width: 75%; 
+    background-color: $blue;  
+    animation: progressAnimationCSS 6s;
+  }
+  
+  @keyframes progressAnimationCSS {
+    0%   { width: 5%; background-color: $blue;}
+    100% { width: 75%; background-color: $blue; }
+  }
+ 
+  
+  .progress-moved .progress-bar2.js{
+    width: 80%; 
+    background-color:$yellow;  
+    animation: progressAnimationJS 6s;
+  }
+  
+  @keyframes progressAnimationJS {
+    0%   { width: 5%; background-color:$yellow;}
+    100% { width: 80%; background-color:$yellow; }
+  }
+  .progress-moved .progress-bar2.react{
+    width: 74%; 
+    background-color:$aqua;  
+    animation: progressAnimationReact 6s;
+  }
+  
+  @keyframes progressAnimationReact {
+    0%   { width: 5%; background-color: $aqua;}
+    100% { width: 74%; background-color: $aqua; }
+  }
+  .progress-moved .progress-bar2.angular{
+    width: 65%; 
+    background-color: $red;  
+    animation: progressAnimationAngular 6s;
+  }
+  
+  @keyframes progressAnimationAngular {
+    0%   { width: 5%; background-color: $red;}
+    100% { width: 65%; background-color: $red; }
+  }
+  .progress-moved .progress-bar2.node{
+    width: 70%; 
+    background-color: $green;  
+    animation: progressAnimationNode 6s;
+  }
+  
+  @keyframes progressAnimationNode {
+    0%   { width: 5%; background-color: $green;}
+    100% { width: 70%; background-color: $green; }
+  }
+  .progress-moved .progress-bar2.mongo{
+    width: 75%; 
+    
+    background-color: $black;  
+    animation: progressAnimationMongo 6s;
+  }
+  
+  @keyframes progressAnimationMongo {
+    0%   { width: 5%; background-color: $black;}
+    100% { width: 75%; background-color: $black; }
+  }
+  
 .strenghs{
     grid-area:strenghs;
     text-align: center;

@@ -9,6 +9,7 @@
   "author": "Gustavo Herrera",
   "license": "MIT",
   "dependencies": {
+    "bootswatch": "^4.4.0",
     "node-sass": "^4.13.0"
   }
 }

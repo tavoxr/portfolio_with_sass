@@ -10,6 +10,15 @@ $background-opacity: 0.6;
 $home-portrait-img: url('https://scontent.fgua3-2.fna.fbcdn.net/v/t1.0-9/11012188_887152621327209_6660677645954595418_n.jpg?_nc_cat=107&_nc_ohc=TaEEnHW6FI4AQkdRZHrQ6x3KomNGNoQGR7MlLq_SZTxASj1_26mUQqrPw&_nc_ht=scontent.fgua3-2.fna&oh=e93e33c888e8b195e556f768bb785594&oe=5E7CE71C');
 
 
+//skills
+$orange:rgb(206, 123, 45);
+$blue:rgb(77, 158, 196) ;
+$yellow:rgb(212, 203, 76);
+$aqua:rgb(61, 206, 199);
+$red:rgb(161, 40, 40);
+$green:rgb(71, 170, 79);
+$black:rgb(146, 142, 142);
+
 @mixin easeOut{
     transition: all 0.5s ease-out;
 }

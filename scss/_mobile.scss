@@ -1,10 +1,20 @@
 //Widescreens
 @include mediaXL{
+.projects{
+    grid-template-columns: repeat(4,1fr);
+
+}
+
 
 }
 
 //Desktops & Laptops
 @include mediaLg{
+    .projects{
+        grid-template-columns: repeat(3,1fr);
+        
+    }
+    
     .bio-img{
         width: 83%;
         
@@ -60,6 +70,12 @@
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
+
+    .projects{
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    
 }
 
 //Smartphones
@@ -75,6 +91,12 @@
     }
     
 }
+
+.projects{
+    grid-template-columns: repeat(1,1fr);
+    
+}
+
 
 }
 

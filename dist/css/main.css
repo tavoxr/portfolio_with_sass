@@ -98,6 +98,8 @@
 
 body {
   background: #444;
+  background-attachment: fixed;
+  background-size: cover;
   color: #fff;
   height: 100%;
   margin: 0;
@@ -109,7 +111,7 @@ body {
     background-size: cover; }
     body#bg-img:after {
       content: '';
-      position: absolute;
+      position: fixed;
       top: 0;
       right: 0;
       width: 100%;
@@ -159,32 +161,43 @@ main {
   gap: 30px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, auto);
-  grid-template-areas: 'bioimage bio ' 'skills strenghs'; }
+  grid-template-areas: ' bio-image bio ' 'skills strenghs'; }
 
 .bio-image {
-  grid-area: bioimage;
+  grid-area: bio-image;
   display: flex;
   justify-content: center;
   align-items: center; }
 
 .bio-img {
-  width: 45%;
+  width: 50%;
   border-radius: 50%;
   border: #06b7ec 3px solid; }
 
 .bio {
   grid-area: bio;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  border-radius: 14px; }
 
 .skills {
   grid-area: skills;
   text-align: center;
-  background: #515151;
+  background: rgba(34, 52, 54, 0.8);
   padding: 0.5rem;
   border-bottom: #06b7ec 5px solid;
   display: flex;
   justify-content: center;
-  flex-flow: column; }
+  flex-flow: column;
+  border-radius: 14px;
+  font-size: 0.9rem; }
+
+.strenghs {
+  grid-area: strenghs;
+  background: rgba(34, 52, 54, 0.7);
+  border-radius: 14px;
+  text-align: center;
+  padding: 0.5rem;
+  border-bottom: #06b7ec 5px solid; }
 
 .container {
   margin: 10px auto;
@@ -211,7 +224,7 @@ main {
 
 .progress-moved .progress-bar2.html {
   width: 85%;
-  background-color: #ce7b2d;
+  background-color: #27c9c1;
   font-size: 12px;
   animation-name: progressAnimationHTML;
   animation-duration: 6s; }
@@ -219,95 +232,88 @@ main {
 @keyframes progressAnimationHTML {
   0% {
     width: 5%;
-    background-color: #ce7b2d; }
+    background-color: #27c9c1; }
   100% {
     width: 85%;
-    background-color: #ce7b2d; } }
+    background-color: #27c9c1; } }
 
 .progress-moved .progress-bar2.css {
   width: 75%;
-  background-color: #4d9ec4;
+  background-color: #27c9c1;
   animation: progressAnimationCSS 6s; }
 
 @keyframes progressAnimationCSS {
   0% {
     width: 5%;
-    background-color: #4d9ec4; }
+    background-color: #27c9c1; }
   100% {
     width: 75%;
-    background-color: #4d9ec4; } }
+    background-color: #27c9c1; } }
 
 .progress-moved .progress-bar2.js {
   width: 80%;
-  background-color: #d4cb4c;
+  background-color: #27c9c1;
   animation: progressAnimationJS 6s; }
 
 @keyframes progressAnimationJS {
   0% {
     width: 5%;
-    background-color: #d4cb4c; }
+    background-color: #27c9c1; }
   100% {
     width: 80%;
-    background-color: #d4cb4c; } }
+    background-color: #27c9c1; } }
 
 .progress-moved .progress-bar2.react {
   width: 74%;
-  background-color: #3dcec7;
+  background-color: #27c9c1;
   animation: progressAnimationReact 6s; }
 
 @keyframes progressAnimationReact {
   0% {
     width: 5%;
-    background-color: #3dcec7; }
+    background-color: #27c9c1; }
   100% {
     width: 74%;
-    background-color: #3dcec7; } }
+    background-color: #27c9c1; } }
 
 .progress-moved .progress-bar2.angular {
   width: 65%;
-  background-color: #a12828;
+  background-color: #27c9c1;
   animation: progressAnimationAngular 6s; }
 
 @keyframes progressAnimationAngular {
   0% {
     width: 5%;
-    background-color: #a12828; }
+    background-color: #27c9c1; }
   100% {
     width: 65%;
-    background-color: #a12828; } }
+    background-color: #27c9c1; } }
 
 .progress-moved .progress-bar2.node {
   width: 70%;
-  background-color: #47aa4f;
+  background-color: #27c9c1;
   animation: progressAnimationNode 6s; }
 
 @keyframes progressAnimationNode {
   0% {
     width: 5%;
-    background-color: #47aa4f; }
+    background-color: #27c9c1; }
   100% {
     width: 70%;
-    background-color: #47aa4f; } }
+    background-color: #27c9c1; } }
 
 .progress-moved .progress-bar2.mongo {
   width: 75%;
-  background-color: #928e8e;
+  background-color: #27c9c1;
   animation: progressAnimationMongo 6s; }
 
 @keyframes progressAnimationMongo {
   0% {
     width: 5%;
-    background-color: #928e8e; }
+    background-color: #27c9c1; }
   100% {
     width: 75%;
-    background-color: #928e8e; } }
-
-.strenghs {
-  grid-area: strenghs;
-  text-align: center;
-  background: #515151;
-  padding: 0.5rem;
-  border-bottom: #06b7ec 5px solid; }
+    background-color: #27c9c1; } }
 
 .projects {
   display: grid;

@@ -7,15 +7,19 @@
 }
 
 body{
-    @include background;
-    background: $primary-color;
-    color: set-text-color($primary-color);
-    height: 100%;
+  @include background;
+  background: $primary-color;
+  background-attachment: fixed;
+  background-size: cover;
+  color: set-text-color($primary-color);
+  height: 100%;
     margin: 0;
     font-family: 'Segoe UI', 'Segoe UI', Tahoma,
      Geneva, Verdana, sans-serif;
-    line-height: 1.5;
+     line-height: 1.5;
 }
+
+
 
 
 //headings
@@ -82,12 +86,12 @@ main{
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,auto);
     grid-template-areas: 
-    'bioimage bio '
+    ' bio-image bio '
     'skills strenghs';
 }
 
 .bio-image{
-    grid-area: bioimage;
+    grid-area: bio-image;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,7 +102,7 @@ main{
 }
 
 .bio-img{
-    width: 45%;
+    width: 50%;
     border-radius: 50%;
     border: $secondary-color 3px solid;
 
@@ -108,21 +112,34 @@ main{
     grid-area: bio;
     font-size: 1.5rem;
     
+    border-radius: 14px;
+    
+    
 }
 
 .skills{
     grid-area: skills;
     text-align: center;
     
-    background: lighten($primary-color, 5);
+    background: rgba(34, 52, 54,0.8);//lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
     display: flex;
     justify-content: center;
     flex-flow: column;
+    border-radius: 14px;
+    font-size: 0.9rem;
 
 
     
+}
+.strenghs{
+  grid-area: strenghs;
+  background: rgba(34, 52, 54,0.7);
+  border-radius: 14px;
+  text-align: center;  
+  padding: 0.5rem;
+  border-bottom: $secondary-color 5px solid;
 }
 
 
@@ -164,7 +181,7 @@ main{
   
   .progress-moved .progress-bar2.html {
     width: 85%; 
-    background-color: $orange;  
+    background-color: $aqua;  
     font-size: 12px;
 
      animation-name: progressAnimationHTML;
@@ -172,31 +189,31 @@ main{
   }
   
   @keyframes progressAnimationHTML {
-    0%   { width: 5%; background-color: $orange;}
-    100% { width: 85%; background-color: $orange; }
+    0%   { width: 5%; background-color: $aqua;}
+    100% { width: 85%; background-color: $aqua; }
   }
   
   .progress-moved .progress-bar2.css{
     width: 75%; 
-    background-color: $blue;  
+    background-color: $aqua;  
     animation: progressAnimationCSS 6s;
   }
   
   @keyframes progressAnimationCSS {
-    0%   { width: 5%; background-color: $blue;}
-    100% { width: 75%; background-color: $blue; }
+    0%   { width: 5%; background-color: $aqua;}
+    100% { width: 75%; background-color: $aqua; }
   }
  
   
   .progress-moved .progress-bar2.js{
     width: 80%; 
-    background-color:$yellow;  
+    background-color:$aqua;  
     animation: progressAnimationJS 6s;
   }
   
   @keyframes progressAnimationJS {
-    0%   { width: 5%; background-color:$yellow;}
-    100% { width: 80%; background-color:$yellow; }
+    0%   { width: 5%; background-color:$aqua;}
+    100% { width: 80%; background-color:$aqua; }
   }
   .progress-moved .progress-bar2.react{
     width: 74%; 
@@ -210,44 +227,37 @@ main{
   }
   .progress-moved .progress-bar2.angular{
     width: 65%; 
-    background-color: $red;  
+    background-color: $aqua;  
     animation: progressAnimationAngular 6s;
   }
   
   @keyframes progressAnimationAngular {
-    0%   { width: 5%; background-color: $red;}
-    100% { width: 65%; background-color: $red; }
+    0%   { width: 5%; background-color: $aqua;}
+    100% { width: 65%; background-color: $aqua; }
   }
   .progress-moved .progress-bar2.node{
     width: 70%; 
-    background-color: $green;  
+    background-color: $aqua;  
     animation: progressAnimationNode 6s;
   }
   
   @keyframes progressAnimationNode {
-    0%   { width: 5%; background-color: $green;}
-    100% { width: 70%; background-color: $green; }
+    0%   { width: 5%; background-color: $aqua;}
+    100% { width: 70%; background-color: $aqua; }
   }
   .progress-moved .progress-bar2.mongo{
     width: 75%; 
     
-    background-color: $black;  
+    background-color: $aqua;  
     animation: progressAnimationMongo 6s;
   }
   
   @keyframes progressAnimationMongo {
-    0%   { width: 5%; background-color: $black;}
-    100% { width: 75%; background-color: $black; }
+    0%   { width: 5%; background-color: $aqua;}
+    100% { width: 75%; background-color: $aqua; }
   }
   
-.strenghs{
-    grid-area:strenghs;
-    text-align: center;
 
-    background: lighten($primary-color, 5);
-    padding: 0.5rem;
-    border-bottom: $secondary-color 5px solid;
-}
 
 //Work-Projects
 

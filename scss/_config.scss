@@ -14,7 +14,7 @@ $home-portrait-img: url('https://scontent.fgua3-2.fna.fbcdn.net/v/t1.0-9/1101218
 $orange:rgb(206, 123, 45);
 $blue:rgb(77, 158, 196) ;
 $yellow:rgb(212, 203, 76);
-$aqua:rgb(61, 206, 199);
+$aqua:rgb(39, 201, 193);
 $red:rgb(161, 40, 40);
 $green:rgb(71, 170, 79);
 $black:rgb(146, 142, 142);
@@ -26,13 +26,13 @@ $black:rgb(146, 142, 142);
 @mixin background{
     @if $show-home-image{
         &#bg-img{
-            background: $home-image;
+            background:  $home-image  ;
             background-attachment: fixed;
-            background-size: cover;
-
+            background-size: cover; 
+           
             &:after{
                 content:'';
-                position: absolute;
+                position: fixed;
                 top: 0;
                 right: 0;
                 width: 100%;

@@ -117,7 +117,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.6); }
+      background: rgba(68, 68, 68, 0.4); }
 
 h1, h2, h3 {
   margin: 0;
@@ -161,7 +161,7 @@ main {
   gap: 30px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, auto);
-  grid-template-areas: ' bio-image bio ' 'skills strenghs'; }
+  grid-template-areas: ' bio-image bio ' 'skills bio'; }
 
 .bio-image {
   grid-area: bio-image;
@@ -170,19 +170,21 @@ main {
   align-items: center; }
 
 .bio-img {
-  width: 50%;
+  width: 45%;
   border-radius: 50%;
   border: #06b7ec 3px solid; }
 
 .bio {
   grid-area: bio;
   font-size: 1.5rem;
-  border-radius: 14px; }
+  padding-left: 20px;
+  border-radius: 10px;
+  background: rgba(83, 83, 83, 0.3); }
 
 .skills {
   grid-area: skills;
   text-align: center;
-  background: rgba(34, 52, 54, 0.8);
+  background: rgba(34, 52, 54, 0.9);
   padding: 0.5rem;
   border-bottom: #06b7ec 5px solid;
   display: flex;
@@ -190,14 +192,6 @@ main {
   flex-flow: column;
   border-radius: 14px;
   font-size: 0.9rem; }
-
-.strenghs {
-  grid-area: strenghs;
-  background: rgba(34, 52, 54, 0.7);
-  border-radius: 14px;
-  text-align: center;
-  padding: 0.5rem;
-  border-bottom: #06b7ec 5px solid; }
 
 .container {
   margin: 10px auto;

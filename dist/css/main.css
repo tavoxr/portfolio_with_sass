@@ -108,7 +108,8 @@ body {
   body#bg-img {
     background: url("https://o0o0sm3y25-flywheel.netdna-ssl.com/wp-content/uploads/2018/05/iphone-notes-1-696x385.jpg");
     background-attachment: fixed;
-    background-size: cover; }
+    background-size: cover;
+    height: 100%; }
     body#bg-img:after {
       content: '';
       position: fixed;
@@ -489,7 +490,10 @@ main {
       font-size: 4em; }
   .projects {
     grid-template-columns: repeat(1, 1fr); }
-  html, body {
+  html {
+    height: 100%;
+    margin: 0; }
+  body {
     background: #444;
     background-attachment: fixed;
     background-size: cover;
@@ -498,11 +502,12 @@ main {
     margin: 0;
     font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5; }
-    html#bg-img, body#bg-img {
+    body#bg-img {
       background: url("https://o0o0sm3y25-flywheel.netdna-ssl.com/wp-content/uploads/2018/05/iphone-notes-1-696x385.jpg");
       background-attachment: fixed;
-      background-size: cover; }
-      html#bg-img:after, body#bg-img:after {
+      background-size: cover;
+      height: 100%; }
+      body#bg-img:after {
         content: '';
         position: fixed;
         top: 0;

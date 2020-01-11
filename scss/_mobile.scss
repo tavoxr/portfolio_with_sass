@@ -98,8 +98,12 @@
 }
 
 
+html{
+    height: 100%;
+    margin: 0;
+}
 
-html,body{
+body{
     @include background;
     background: $primary-color;
     background-attachment: fixed;

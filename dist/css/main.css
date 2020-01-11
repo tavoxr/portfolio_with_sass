@@ -492,7 +492,7 @@ main {
   body {
     background: #444;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: auto;
     color: #fff;
     height: 100%;
     margin: 0;

@@ -97,11 +97,13 @@
     
 }
 
+
+
 body{
     @include background;
     background: $primary-color;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: auto;
     color: set-text-color($primary-color);
     height: 100%;
       margin: 0;

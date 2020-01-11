@@ -99,18 +99,12 @@
 
 
 
-body{
+html,body{
     @include background;
     background: $primary-color;
-    background-attachment: local;
+    background-attachment: fixed;
     background-size: cover;
-    background-repeat: no-repeat;
-    color: set-text-color($primary-color);
-    height: auto;
-      margin: 0;
-      font-family: 'Segoe UI', 'Segoe UI', Tahoma,
-       Geneva, Verdana, sans-serif;
-       line-height: 1.5;
+   height: 100%;
   }
 
 

@@ -489,21 +489,16 @@ main {
       font-size: 4em; }
   .projects {
     grid-template-columns: repeat(1, 1fr); }
-  body {
+  html, body {
     background: #444;
-    background-attachment: local;
+    background-attachment: fixed;
     background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-    height: auto;
-    margin: 0;
-    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.5; }
-    body#bg-img {
+    height: 100%; }
+    html#bg-img, body#bg-img {
       background: url("https://o0o0sm3y25-flywheel.netdna-ssl.com/wp-content/uploads/2018/05/iphone-notes-1-696x385.jpg");
       background-attachment: fixed;
       background-size: cover; }
-      body#bg-img:after {
+      html#bg-img:after, body#bg-img:after {
         content: '';
         position: fixed;
         top: 0;

@@ -102,8 +102,9 @@
 body{
     @include background;
     background: $primary-color;
-    background-attachment: fixed;
+    background-attachment: local;
     background-size: cover;
+    background-repeat: no-repeat;
     color: set-text-color($primary-color);
     height: auto;
       margin: 0;

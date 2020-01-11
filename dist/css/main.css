@@ -491,8 +491,9 @@ main {
     grid-template-columns: repeat(1, 1fr); }
   body {
     background: #444;
-    background-attachment: fixed;
+    background-attachment: local;
     background-size: cover;
+    background-repeat: no-repeat;
     color: #fff;
     height: auto;
     margin: 0;

@@ -105,6 +105,12 @@ html,body{
     background-attachment: fixed;
     background-size: cover;
    height: 100%;
+    color: set-text-color($primary-color);
+    
+      margin: 0;
+      font-family: 'Segoe UI', 'Segoe UI', Tahoma,
+       Geneva, Verdana, sans-serif;
+       line-height: 1.5;
   }
 
 

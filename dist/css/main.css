@@ -518,7 +518,7 @@ main {
         background: rgba(68, 68, 68, 0.4); }
   .menu-nav {
     display: flex;
-    justify-content: start; }
+    justify-content: baseline; }
   .menu .nav-item {
     margin-top: 2px;
     padding: 0; }

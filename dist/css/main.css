@@ -565,8 +565,7 @@ main {
   body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
-    overflow: hidden; }
+    grid-template-rows: repeat(3, auto); }
   .projects {
     width: 100%;
     grid-template-columns: 1fr;

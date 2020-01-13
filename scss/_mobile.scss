@@ -181,6 +181,7 @@ body{
 .bio-image{
     grid-area: bio-image;
     display: flex;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
     
@@ -216,7 +217,7 @@ body{
 }
 
 #main-footerA{
-    margin-top: 120vh;
+    margin-top: 130vh;
     text-align:center;
     padding: 1rem;
     background: darken($primary-color,10);

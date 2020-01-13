@@ -389,19 +389,23 @@ main {
 
 .boxes {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "face linke " "git email"; }
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "face linke git email"; }
   .boxes div {
+    width: 50%;
     font-size: 2rem;
     border-radius: 5px;
-    padding: 1.5rem 2.5rem;
-    margin-bottom: 3rem;
+    padding: 1.5rem 1rem;
+    margin-bottom: 1rem;
     transition: all 0.5s ease-out; }
 
 .email {
   grid-area: email;
   width: 100%; }
+  .email h4 {
+    margin-top: 0; }
 
 .face {
   grid-area: face;

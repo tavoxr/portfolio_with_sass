@@ -389,7 +389,7 @@ main {
 
 .boxes {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas: "face linke " "git email"; }
   .boxes div {
@@ -400,19 +400,20 @@ main {
     transition: all 0.5s ease-out; }
 
 .email {
-  grid-area: email; }
-
-.phone {
-  grid-area: phone; }
+  grid-area: email;
+  width: 100%; }
 
 .face {
-  grid-area: face; }
+  grid-area: face;
+  width: 100%; }
 
 .git {
-  grid-area: git; }
+  grid-area: git;
+  width: 100%; }
 
 .linke {
-  grid-area: linke; }
+  grid-area: linke;
+  width: 100%; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -604,7 +605,26 @@ main {
       transition: all 0.5s ease-out;
       display: flex;
       flex-flow: column;
-      justify-content: center;
-      align-content: center; }
+      justify-content: flex-start;
+      align-content: flex-start; }
+    .boxes .email {
+      grid-area: email;
+      width: 100%; }
+    .boxes .face {
+      grid-area: face;
+      width: 100%; }
+    .boxes .git {
+      grid-area: git;
+      width: 100%; }
+    .boxes .linke {
+      grid-area: linke;
+      width: 100%; }
     .boxes .email h4 {
-      font-size: 1.6rem; } }
+      width: 100%;
+      font-size: 1.5rem; }
+  #contact {
+    width: 100%; }
+    #contact h1 {
+      font-size: 4.5rem; }
+  .contFab {
+    width: 100%; } }

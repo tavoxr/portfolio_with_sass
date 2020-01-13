@@ -374,7 +374,7 @@ main{
 //Contact Page
 .boxes{
   display: grid;
-  grid-template-columns: repeat(1,1fr);
+  grid-template-columns: repeat(2,1fr);
   grid-template-rows: repeat(2,1fr);
     grid-template-areas: 
     "face linke "
@@ -396,24 +396,21 @@ main{
 
 .email{
 grid-area: email ;
-
-
-}
-.phone{
-  grid-area: phone ;
+width: 100%;
 
 }
+
 .face{
   grid-area: face ;
-
+  width: 100%;
 }
 .git{
   grid-area: git ;
-
+  width: 100%;
 }
 .linke{
   grid-area: linke;
-
+  width: 100%;
 }
 
 

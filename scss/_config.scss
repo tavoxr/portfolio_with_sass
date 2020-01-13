@@ -1,12 +1,12 @@
-$primary-color: rgb(32, 32, 32);
+$primary-color: #444;
 $secondary-color: #06b7ec;
 $show-home-image: true;
 $home-image: url(
      'https://o0o0sm3y25-flywheel.netdna-ssl.com/wp-content/uploads/2018/05/iphone-notes-1-696x385.jpg'
-  
+    /*'https://www.setaswall.com/wp-content/uploads/2017/03/Macbook-Apple-Computer-Wallpaper-1920x1080.jpg'*/
 );
 
-$background-opacity: 0.5;
+$background-opacity: 0.4;
 $home-portrait-img: url('https://scontent.fgua3-2.fna.fbcdn.net/v/t1.0-9/11012188_887152621327209_6660677645954595418_n.jpg?_nc_cat=107&_nc_ohc=TaEEnHW6FI4AQkdRZHrQ6x3KomNGNoQGR7MlLq_SZTxASj1_26mUQqrPw&_nc_ht=scontent.fgua3-2.fna&oh=e93e33c888e8b195e556f768bb785594&oe=5E7CE71C');
 
 $thirdColor: #f09d51;
@@ -35,7 +35,6 @@ $black:rgb(146, 142, 142);
             background:  $home-image  ;
             background-attachment: fixed;
             background-size: cover; 
-            
             height: 100%;
             &:after{
                 content:'';
@@ -67,7 +66,7 @@ $black:rgb(146, 142, 142);
 
 //Media Query Mixins
 @mixin mediaSm {
-    @media screen and (min-width:200px)and (max-width:500px){
+    @media screen and (max-width:500px){
         @content;
         
     }
@@ -75,7 +74,7 @@ $black:rgb(146, 142, 142);
 }
 
 @mixin mediaMd {
-    @media screen and (min-width:501px)and(max-width:768px){
+    @media screen and (max-width:768px){
         @content;
         
     }

@@ -100,7 +100,6 @@ body {
   background: #444;
   background-attachment: fixed;
   background-size: cover;
-  overflow: scroll;
   color: #fff;
   height: 100%;
   margin: 0;
@@ -578,13 +577,12 @@ main {
   body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
-    overflow: auto; }
+    grid-template-rows: repeat(3, auto); }
   .projects {
     width: 100%;
     grid-template-columns: 1fr;
     padding: 1rem 0;
-    overflow: scroll; }
+    overflow: visible; }
   .projects-center {
     width: 100%;
     display: grid;

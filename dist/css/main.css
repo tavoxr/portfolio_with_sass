@@ -106,10 +106,10 @@ body {
   font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url("https://o0o0sm3y25-flywheel.netdna-ssl.com/wp-content/uploads/2018/05/iphone-notes-1-696x385.jpg");
+    background: url("https://o0o0sm3y25-flywheel.netdna-ssl.com/wp-content/uploads/2018/05/iphone-notes-1-696x385.jpg") scroll;
     background-attachment: fixed;
     background-size: cover;
-    background-repeat: no-repeatl;
+    background-repeat: no-repeat;
     height: 100%; }
     body#bg-img:after {
       content: '';
@@ -511,10 +511,10 @@ main {
     font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5; }
     body#bg-img {
-      background: url("https://o0o0sm3y25-flywheel.netdna-ssl.com/wp-content/uploads/2018/05/iphone-notes-1-696x385.jpg");
+      background: url("https://o0o0sm3y25-flywheel.netdna-ssl.com/wp-content/uploads/2018/05/iphone-notes-1-696x385.jpg") scroll;
       background-attachment: fixed;
       background-size: cover;
-      background-repeat: no-repeatl;
+      background-repeat: no-repeat;
       height: 100%; }
       body#bg-img:after {
         content: '';
@@ -580,10 +580,10 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
+    background: scroll;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 100%;
-    overflow: hidden; }
+    height: 100%; }
   .projects {
     width: 100%;
     grid-template-columns: 1fr;

@@ -235,11 +235,12 @@ body{
     grid-template-rows: repeat(3,auto);
     // grid-template-areas: 'header'
     //                         ''
+    background: scroll;
     background-attachment: fixed;
     background-repeat: no-repeat;
   height: 100%;
     // ;
-    overflow: hidden;
+    
     
 }
 

@@ -32,10 +32,12 @@ $black:rgb(146, 142, 142);
 @mixin background{
     @if $show-home-image{
         &#bg-img{
-            background:  $home-image  ;
+            background:  $home-image scroll ;
             background-attachment: fixed;
             background-size: cover; 
-            background-repeat: no-repeatl;
+            background-repeat: no-repeat;
+            
+
             height: 100%;
             &:after{
                 content:'';

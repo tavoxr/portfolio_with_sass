@@ -397,24 +397,34 @@ main{
 
 
 //Contact Page
+
+
+
+
 .boxes{
   display: grid;
  width: 100%;
-  grid-template-columns: repeat(4,1fr);
-  grid-template-rows: auto;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,auto);
     grid-template-areas: 
-    "face linke git email"
+    "face linke git "
+    "email email email"
     
     ;
 
   div{
-    width: 50%;
+    width: 100%;
     font-size: 2rem;
     // border: 1px rgb(236, 235, 235) solid;
     border-radius: 5px;
     padding: 1.5rem 1rem;
     margin-bottom: 1rem;
     @include easeOut;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
   }
 
 
@@ -423,28 +433,53 @@ main{
 .email{
 grid-area: email ;
 width: 100%;
+// background: royalblue;
+text-align: center;
 
-h4{
-  margin-top: 0;
- font-size: 1.5rem;
- font-weight: 400;
- 
- 
-}
+  .contFab{
+    width: 100%;
+    // background: red;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    h4{
+      margin-top: 0;
+     font-size: 1.5rem;
+     text-align: center;
+     font-weight: 400;
+     
+     
+    }
+
+  }
+
+
 
 }
 
 .face{
   grid-area: face ;
   width: 100%;
+    a:hover{
+      color: $secondary-color;
+
+  }
 }
 .git{
   grid-area: git ;
   width: 100%;
+      a:hover{
+        color: $secondary-color;
+      }
 }
 .linke{
   grid-area: linke;
   width: 100%;
+      a:hover{
+        color: $secondary-color;
+       }
 }
 
 

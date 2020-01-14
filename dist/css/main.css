@@ -407,36 +407,54 @@ main {
 .boxes {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas: "face linke git email"; }
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "face linke git " "email email email"; }
   .boxes div {
-    width: 50%;
+    width: 100%;
     font-size: 2rem;
     border-radius: 5px;
     padding: 1.5rem 1rem;
     margin-bottom: 1rem;
-    transition: all 0.5s ease-out; }
+    transition: all 0.5s ease-out;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center; }
 
 .email {
   grid-area: email;
-  width: 100%; }
-  .email h4 {
-    margin-top: 0;
-    font-size: 1.5rem;
-    font-weight: 400; }
+  width: 100%;
+  text-align: center; }
+  .email .contFab {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center; }
+    .email .contFab h4 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      text-align: center;
+      font-weight: 400; }
 
 .face {
   grid-area: face;
   width: 100%; }
+  .face a:hover {
+    color: #16d8c8; }
 
 .git {
   grid-area: git;
   width: 100%; }
+  .git a:hover {
+    color: #16d8c8; }
 
 .linke {
   grid-area: linke;
   width: 100%; }
+  .linke a:hover {
+    color: #16d8c8; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -632,6 +650,8 @@ main {
     height: 40px; }
   /*-------------END OF PROJECTS------------*/
   /*-----------------CONTACT-----------------*/
+  #contact .sm-heading {
+    font-size: 1.4rem; }
   .boxes {
     width: 100%;
     display: grid;

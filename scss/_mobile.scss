@@ -229,9 +229,7 @@ body{
 
 /*----------PROJECTS---------*/
 
-html{
-    overflow: scroll;
-}
+
 
 body{
     display: grid;
@@ -244,7 +242,7 @@ body{
     background-repeat: no-repeat;
   height: 100%;
 
-  overflow: scroll;
+  
     
     
     
@@ -270,7 +268,7 @@ body{
     grid-template-columns: 1fr;
     
     grid-row-gap: 2rem;
-    
+    overflow: scroll;
   }
 
 

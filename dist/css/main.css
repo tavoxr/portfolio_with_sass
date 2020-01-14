@@ -576,8 +576,6 @@ main {
     display: none; }
   /*----------END OF ABOUT-------------- */
   /*----------PROJECTS---------*/
-  html {
-    overflow: scroll; }
   body {
     display: grid;
     grid-template-columns: 1fr;
@@ -585,8 +583,7 @@ main {
     background: scroll;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 100%;
-    overflow: scroll; }
+    height: 100%; }
   .projects {
     width: 100%;
     grid-template-columns: 1fr;
@@ -595,7 +592,8 @@ main {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-row-gap: 2rem; }
+    grid-row-gap: 2rem;
+    overflow: scroll; }
   .project {
     width: 100%;
     border-radius: 7px; }

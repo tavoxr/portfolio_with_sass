@@ -33,6 +33,7 @@ h1,h2,h3{
     }
     &.sm-heading{
         margin-bottom: 2rem;
+        border-radius: 5px;
         padding: 0.2rem 1rem;
         background: rgba(lighten($primary-color,2),0.5);
     }
@@ -307,11 +308,18 @@ main{
 
 .bag-btn {
   position: absolute;
+  width: 60px;
+  height: 30px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
   top: 60%;
   right: 0;
   background: $mainBlack;
   border: none;
-  border-radius: 7px;
+  border-top-left-radius:   7px;
+  border-bottom-left-radius: 7px;
   text-transform: uppercase;
   padding: 0.5rem 0.75rem;
   letter-spacing: $mainSpacing;
@@ -323,10 +331,13 @@ main{
 .bag-btn.l {
   position: absolute;
   top: 80%;
+  width: 60px;
+  height: 30px;
   right: 0;
   background: $mainBlack;
   border: none;
-  border-radius: 7px;
+  border-top-left-radius:   7px;
+  border-bottom-left-radius: 7px;
   text-transform: uppercase;
   padding: 0.5rem 0.75rem;
   letter-spacing: $mainSpacing;
@@ -335,6 +346,11 @@ main{
   transform: translateX(101%);
   cursor: pointer;
 }
+
+.bag-btn a{
+  font-size: 1.1rem;
+}
+
 .bag-btn{
 
     a:hover{

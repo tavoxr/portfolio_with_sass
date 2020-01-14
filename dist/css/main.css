@@ -368,7 +368,9 @@ main {
 .project-img {
   display: block;
   width: 100%;
-  min-height: 12rem;
+  height: 16rem;
+  border: 1px solid #5a5959;
+  border-radius: 5px;
   transition: all 0.3s linear; }
 
 .img-container:hover .project-img {
@@ -592,7 +594,7 @@ main {
     display: block;
     border-radius: 7px;
     width: 100%;
-    min-height: 12rem;
+    height: 16rem;
     transition: all 0.3s linear; }
   #work .lg-heading {
     font-size: 5rem; }

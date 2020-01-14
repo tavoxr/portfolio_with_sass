@@ -237,6 +237,8 @@ body{
     width: 100%;
     grid-template-columns: 1fr;
     padding: 1rem 0;
+
+   
 }
 
   .projects-center {
@@ -252,10 +254,12 @@ body{
 
   .project{
       width: 100%;
+      border-radius: 7px;
 
   }
   .project-img {
     display: block;
+    border-radius: 7px;
     width: 100%;
     min-height: 12rem;
     transition: $mainTransition;

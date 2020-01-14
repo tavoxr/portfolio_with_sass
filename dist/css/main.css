@@ -542,6 +542,10 @@ main {
       height: 170px; }
   /*--------------------END OF MENU----------------------*/
   /*------------------ABOUT ME----------------*/
+  #about .lg-heading {
+    font-size: 5rem; }
+  #about .sm-heading {
+    font-size: 1.4rem; }
   .about-info {
     display: grid;
     gap: 30px;
@@ -590,6 +594,10 @@ main {
     width: 100%;
     min-height: 12rem;
     transition: all 0.3s linear; }
+  #work .lg-heading {
+    font-size: 5rem; }
+  #work .sm-heading {
+    font-size: 1.4rem; }
   #main-footer {
     text-align: center;
     padding: 1rem;
@@ -635,6 +643,6 @@ main {
     #contact h1 {
       font-size: 4.2rem; }
     #contact h2 {
-      font-size: 1.7rem; }
+      font-size: 1.5rem; }
   .contFab {
     width: 100%; } }

@@ -159,7 +159,14 @@ body{
 
 /*------------------ABOUT ME----------------*/
 
-
+#about{
+    .lg-heading{
+        font-size: 5rem;
+    }
+    .sm-heading{
+        font-size: 1.4rem;
+    }
+}
 
 
 .about-info{
@@ -265,6 +272,15 @@ body{
     transition: $mainTransition;
   }
 
+  #work{
+    .lg-heading{
+        font-size: 5rem;
+    }
+    .sm-heading{
+        font-size: 1.4rem;
+    }
+      
+  }
   
   #main-footer{
     
@@ -352,7 +368,7 @@ body{
     }
 
     h2{
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
   }
 

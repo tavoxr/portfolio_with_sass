@@ -579,7 +579,7 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
-    overflow: scroll; }
+    overflow: auto; }
   .projects {
     width: 100%;
     grid-template-columns: 1fr;

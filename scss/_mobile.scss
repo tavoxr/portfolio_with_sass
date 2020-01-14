@@ -229,11 +229,12 @@ body{
 /*----------PROJECTS---------*/
 
 body{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3,auto);
+    // display: grid;
+    // grid-template-columns: 1fr;
+    // grid-template-rows: repeat(3,auto);
     // grid-template-areas: 'header'
     //                         ''
+
     background-attachment: fixed;
     background-repeat: no-repeat;
   height: 100%;
@@ -293,6 +294,8 @@ body{
     background: darken($primary-color,10);
     color: set-text-color($primary-color);
     height: 60px;
+    position: relative;
+    z-index: -1;
     
 }
 

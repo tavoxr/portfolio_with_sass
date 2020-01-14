@@ -627,10 +627,15 @@ main {
     grid-row-gap: 2rem; }
   .project {
     width: 100%;
-    border-radius: 7px; }
+    border-radius: 9px;
+    background: rgba(73, 73, 73, 0.6);
+    padding: 10px; }
+    .project h3, .project h4 {
+      font-weight: 500; }
   .project-img {
     display: block;
     border-radius: 7px;
+    border: none;
     width: 100%;
     height: 12rem;
     transition: all 0.3s linear; }

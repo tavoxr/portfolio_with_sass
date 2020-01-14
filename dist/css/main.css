@@ -109,6 +109,7 @@ body {
     background: url("https://o0o0sm3y25-flywheel.netdna-ssl.com/wp-content/uploads/2018/05/iphone-notes-1-696x385.jpg");
     background-attachment: fixed;
     background-size: cover;
+    background-repeat: no-repeat;
     height: 100%; }
     body#bg-img:after {
       content: '';
@@ -513,6 +514,7 @@ main {
       background: url("https://o0o0sm3y25-flywheel.netdna-ssl.com/wp-content/uploads/2018/05/iphone-notes-1-696x385.jpg");
       background-attachment: fixed;
       background-size: cover;
+      background-repeat: no-repeat;
       height: 100%; }
       body#bg-img:after {
         content: '';
@@ -578,7 +580,9 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
-    position: static; }
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100%; }
   .projects {
     width: 100%;
     grid-template-columns: 1fr;

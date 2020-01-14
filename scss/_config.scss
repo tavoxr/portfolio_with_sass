@@ -35,6 +35,7 @@ $black:rgb(146, 142, 142);
             background:  $home-image  ;
             background-attachment: fixed;
             background-size: cover; 
+            background-repeat: no-repeat;
             height: 100%;
             &:after{
                 content:'';

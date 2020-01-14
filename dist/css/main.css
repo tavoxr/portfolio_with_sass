@@ -577,7 +577,8 @@ main {
   body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto); }
+    grid-template-rows: repeat(3, auto);
+    position: static; }
   .projects {
     width: 100%;
     grid-template-columns: 1fr;

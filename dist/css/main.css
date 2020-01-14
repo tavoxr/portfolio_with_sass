@@ -577,9 +577,6 @@ main {
   /*----------END OF ABOUT-------------- */
   /*----------PROJECTS---------*/
   body {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
     background: scroll;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -614,8 +611,8 @@ main {
     color: #fff;
     height: 60px;
     margin-top: 100vh;
-    z-index: -1;
     position: absolute;
+    z-index: 28;
     width: 100%; }
   /*-------------END OF PROJECTS------------*/
   /*-----------------CONTACT-----------------*/

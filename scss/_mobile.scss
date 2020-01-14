@@ -229,6 +229,10 @@ body{
 
 /*----------PROJECTS---------*/
 
+html{
+    overflow: scroll;
+}
+
 body{
     display: grid;
     grid-template-columns: 1fr;
@@ -239,7 +243,9 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
   height: 100%;
-    position: sticky;
+
+  overflow: scroll;
+    
     
     
 }
@@ -252,7 +258,7 @@ body{
     grid-template-columns: 1fr;
     padding: 1rem 0;
    
-    overflow: scroll;
+    
    
 }
 

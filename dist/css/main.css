@@ -576,6 +576,8 @@ main {
     display: none; }
   /*----------END OF ABOUT-------------- */
   /*----------PROJECTS---------*/
+  html {
+    overflow: scroll; }
   body {
     display: grid;
     grid-template-columns: 1fr;
@@ -584,12 +586,11 @@ main {
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: 100%;
-    position: sticky; }
+    overflow: scroll; }
   .projects {
     width: 100%;
     grid-template-columns: 1fr;
-    padding: 1rem 0;
-    overflow: scroll; }
+    padding: 1rem 0; }
   .projects-center {
     width: 100%;
     display: grid;

@@ -584,7 +584,7 @@ main {
     width: 100%;
     grid-template-columns: 1fr;
     padding: 1rem 0;
-    overflow: scroll; }
+    overflow: visible; }
   .projects-center {
     width: 100%;
     display: grid;

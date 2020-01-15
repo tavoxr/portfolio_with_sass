@@ -83,7 +83,7 @@
     main{
         align-items: center;
         text-align: center;
-        overflow: scroll;
+        // overflow: scroll;
         
     &#home h1{
         margin-top: 10vh;
@@ -240,11 +240,36 @@ body{
     
     background-attachment: fixed;
     background-repeat: no-repeat;
-  height: 100%;
+     height: 100%;
+    width: 100%;
 
-  
-    
-    
+     
+}
+
+
+#work{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-size: 4em;
+    grid-template-columns: 1fr;
+    // background: rebeccapurple;
+    overflow: scroll;
+
+    .lg-heading{
+        margin: 30px;
+        margin-top: 12vh;
+        font-size: 5.7rem;
+       
+    }
+
+    .sm-heading{
+        font-size: 1.4rem;
+        padding: 0;
+        margin: 30px;
+        
+    }
     
 }
 
@@ -252,30 +277,33 @@ body{
 
 
 
+.projects-center {
+    width: 80%;
+  
+    // max-width: 1170px;
+    // display: grid;
+    grid-template-columns: 1fr;
+    
+    // grid-row-gap: 1rem;
+    // background: red;
+
+   
+    
+  }
 
 .projects{
     width: 100%;
     grid-template-columns: 1fr;
     padding: 1rem 0;
    
+   
+//    background: rosybrown;
     
    
 }
 
-  .projects-center {
-    width: 100%;
-   
-    // max-width: 1170px;
-    display: grid;
-    grid-template-columns: 1fr;
-    
-    grid-row-gap: 2rem;
-    
-    
-  }
 
-
-  .project{
+.project{
       width: 100%;
       border-radius: 9px;
       background: rgba(lighten($primary-color,2),0.6);
@@ -285,28 +313,26 @@ body{
 
       h3,h4{
           font-weight: 500;
+          font-size: 1rem;
           
       }
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
 
-  }
+}
+
   .project-img {
-    display: block;
+    // display: block;
     border-radius: 7px;
     border: none;
     width: 100%;
-    height: 11rem;
+    height: 14rem;
     transition: $mainTransition;
   }
 
-  #work{
-    .lg-heading{
-        font-size: 5rem;
-    }
-    .sm-heading{
-        font-size: 1.4rem;
-    }
-      
-  }
+  
   
   #main-footer{
     

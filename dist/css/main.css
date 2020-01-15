@@ -526,8 +526,7 @@ main {
 @media screen and (max-width: 500px) {
   main {
     align-items: center;
-    text-align: center;
-    overflow: scroll; }
+    text-align: center; }
     main#home h1 {
       margin-top: 10vh;
       font-size: 4em; }
@@ -615,34 +614,49 @@ main {
     grid-template-rows: repeat(3, auto);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 100%; }
+    height: 100%;
+    width: 100%; }
+  #work {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-size: 4em;
+    grid-template-columns: 1fr;
+    overflow: scroll; }
+    #work .lg-heading {
+      margin: 30px;
+      margin-top: 12vh;
+      font-size: 5.7rem; }
+    #work .sm-heading {
+      font-size: 1.4rem;
+      padding: 0;
+      margin: 30px; }
+  .projects-center {
+    width: 80%;
+    grid-template-columns: 1fr; }
   .projects {
     width: 100%;
     grid-template-columns: 1fr;
     padding: 1rem 0; }
-  .projects-center {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-row-gap: 2rem; }
   .project {
     width: 100%;
     border-radius: 9px;
     background: rgba(73, 73, 73, 0.6);
-    padding: 7px; }
+    padding: 7px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center; }
     .project h3, .project h4 {
-      font-weight: 500; }
+      font-weight: 500;
+      font-size: 1rem; }
   .project-img {
-    display: block;
     border-radius: 7px;
     border: none;
     width: 100%;
-    height: 11rem;
+    height: 14rem;
     transition: all 0.3s linear; }
-  #work .lg-heading {
-    font-size: 5rem; }
-  #work .sm-heading {
-    font-size: 1.4rem; }
   #main-footer {
     text-align: center;
     display: flex;

@@ -365,14 +365,30 @@ body{
 
 #contact{
 height: 100%;
-    
+width: 100%;
+padding: 0;
+margin: 0;
+height: 100%;
     overflow: scroll;
 
     .lg-heading{
-        font-size: 5.2rem;
+        margin: 30px;
+        margin-top: 10vh;
+        font-size: 5.3rem;
+        text-align: center;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        // background: red;
+       
     }
+
     .sm-heading{
-      font-size: 1.4rem;
+        font-size: 1.4rem;
+        padding: 0;
+        margin: 30px;
+        
     }
   }
 .boxes{
@@ -439,18 +455,7 @@ height: 100%;
 
   
   
-  #contact{
-
-    width: 100%;
-
-    h1{
-        font-size: 4.2rem;
-    }
-
-    h2{
-        font-size: 1.5rem;
-    }
-  }
+  
 
   .contFab{
 width: 100%;

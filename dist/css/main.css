@@ -676,11 +676,24 @@ main {
   /*-----------------CONTACT-----------------*/
   #contact {
     height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
     overflow: scroll; }
     #contact .lg-heading {
-      font-size: 5.2rem; }
+      margin: 30px;
+      margin-top: 10vh;
+      font-size: 5.3rem;
+      text-align: center;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center; }
     #contact .sm-heading {
-      font-size: 1.4rem; }
+      font-size: 1.4rem;
+      padding: 0;
+      margin: 30px; }
   .boxes {
     width: 100%;
     display: grid;
@@ -712,12 +725,6 @@ main {
       width: 100%; }
     .boxes .email h4 {
       width: 100%;
-      font-size: 1.5rem; }
-  #contact {
-    width: 100%; }
-    #contact h1 {
-      font-size: 4.2rem; }
-    #contact h2 {
       font-size: 1.5rem; }
   .contFab {
     width: 100%; } }

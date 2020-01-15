@@ -627,7 +627,12 @@ main {
     #work .lg-heading {
       margin: 30px;
       margin-top: 12vh;
-      font-size: 5.7rem; }
+      font-size: 5.3rem;
+      text-align: center;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center; }
     #work .sm-heading {
       font-size: 1.4rem;
       padding: 0;

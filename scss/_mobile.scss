@@ -393,7 +393,7 @@ body{
 .project{
       width: 100%;
       border-radius: 9px;
-      background: rgba(lighten($primary-color,2),0.6);
+      background: rgba(lighten($primary-color,2),0.8);
     //   height: 300px;
      
       padding: 7px;
@@ -416,10 +416,38 @@ body{
     border-radius: 7px;
     border: none;
     width: 100%;
-    height: 14rem;
+    height: 10rem;
     transition: $mainTransition;
   }
 
+  .bag-btn {
+   
+    width: 60px;
+    height: 30px;
+    
+    top: 55%;
+    right: 0;
+    
+  }
+  .bag-btn.l {
+   
+    top: 80%;
+    width: 60px;
+    height: 30px;
+    right: 0;
+   
+  }
+  
+  .bag-btn a{
+    font-size: 1.2rem;
+  }
+
+
+
+
+  #jsgame{
+    height: 12rem;
+  }
   
   
   #main-footer{
@@ -433,6 +461,7 @@ body{
     background: darken($primary-color,10);
     color: set-text-color($primary-color);
     height: 40px;
+    font-size: 0.8rem;
     // margin-top: ;
     
     

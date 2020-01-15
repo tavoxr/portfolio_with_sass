@@ -115,7 +115,11 @@ body{
   }
 
 /*-------------------MENU--------*/
-
+.menu-btn{
+    
+    right: 18px;
+    top:35px;
+}
 .menu{
 
     &-nav{
@@ -262,10 +266,10 @@ body{
         margin-top: 10vh;
         font-size: 5.3rem;
         text-align: center;
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
+        // display: flex;
+        // flex-flow: column;
+        // justify-content: center;
+        // align-items: center;
         // background: red;
        
     }
@@ -374,7 +378,7 @@ height: 100%;
     .lg-heading{
         margin: 30px;
         margin-top: 10vh;
-        font-size: 5.3rem;
+        font-size: 5.1rem;
         text-align: center;
         display: flex;
         flex-flow: column;

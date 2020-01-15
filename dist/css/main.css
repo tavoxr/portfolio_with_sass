@@ -558,6 +558,9 @@ main {
         z-index: -1;
         background: rgba(68, 68, 68, 0.4); }
   /*-------------------MENU--------*/
+  .menu-btn {
+    right: 18px;
+    top: 35px; }
   .menu-nav {
     display: flex;
     justify-content: flex-start; }
@@ -628,11 +631,7 @@ main {
       margin: 30px;
       margin-top: 10vh;
       font-size: 5.3rem;
-      text-align: center;
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
-      align-items: center; }
+      text-align: center; }
     #work .sm-heading {
       font-size: 1.4rem;
       padding: 0;
@@ -684,7 +683,7 @@ main {
     #contact .lg-heading {
       margin: 30px;
       margin-top: 10vh;
-      font-size: 5.3rem;
+      font-size: 5.1rem;
       text-align: center;
       display: flex;
       flex-flow: column;

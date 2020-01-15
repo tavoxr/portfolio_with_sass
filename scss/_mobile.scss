@@ -162,7 +162,32 @@
 }
 
 
+/*----------HOME-------*/
 
+#home{
+
+    .lg-heading{
+        font-size: 4.2rem;
+        margin-top: 20vh;
+    }
+
+    .sm-heading{
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        padding: 8px 30px;
+        
+    }
+
+    .icons{
+        margin-top:1rem;
+        font-size: 1.1rem;
+
+        a{
+            padding: 0.6rem;
+        }
+
+    }
+}
 
 
 /*-------------------MENU--------*/

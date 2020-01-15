@@ -126,8 +126,9 @@
 
     .lg-heading{
         margin: 30px;
+        margin-bottom: 0;
         margin-top: 10vh;
-        font-size: 5.3rem;
+        font-size: 5rem;
         text-align: center;
         // display: flex;
         // flex-flow: column;
@@ -138,16 +139,15 @@
     }
 
     .sm-heading{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         padding: 10px 20px;
-        margin-top: 15px;
-        margin: 35px;
+        margin: 20px 35px 0 35px;
         
     }
 
     .icons{
         margin-top:1rem;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         a{
             padding: 0.4rem;
 
@@ -168,7 +168,7 @@
 /*-------------------MENU--------*/
 .menu-btn{
     
-    right: 20px;
+    right: 17px;
     top:27px;
 }
 .menu{
@@ -226,7 +226,7 @@
 
 
 .about-info{
-    width: 80%;
+    width: 79%;
     display: grid;
     gap: 10px ;
     grid-template-columns: 1fr;

@@ -162,7 +162,7 @@ body{
 
 #about{
     .lg-heading{
-        font-size: 5rem;
+        font-size: 5.3rem;
     }
     .sm-heading{
         font-size: 1.4rem;
@@ -364,7 +364,13 @@ body{
 
 
 #contact{
+height: 100%;
+    
+    overflow: scroll;
 
+    .lg-heading{
+        font-size: 5.2rem;
+    }
     .sm-heading{
       font-size: 1.4rem;
     }
@@ -381,11 +387,12 @@ body{
       "email"
       
       ;
+     
   
     div{
         width: 100%;
       font-size: 1.8rem;
-      
+    
       border-radius: 5px;
       padding: 0;
       margin-bottom: 2rem;
@@ -401,7 +408,7 @@ body{
     .email{
         grid-area: email ;
         width: 100%;
-      
+        
         
         }
         

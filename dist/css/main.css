@@ -523,7 +523,7 @@ main {
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 560px) {
   main {
     align-items: center;
     text-align: center; }
@@ -579,7 +579,7 @@ main {
   /*--------------------END OF MENU----------------------*/
   /*------------------ABOUT ME----------------*/
   #about .lg-heading {
-    font-size: 5rem; }
+    font-size: 5.3rem; }
   #about .sm-heading {
     font-size: 1.4rem; }
   .about-info {
@@ -674,8 +674,13 @@ main {
     height: 40px; }
   /*-------------END OF PROJECTS------------*/
   /*-----------------CONTACT-----------------*/
-  #contact .sm-heading {
-    font-size: 1.4rem; }
+  #contact {
+    height: 100%;
+    overflow: scroll; }
+    #contact .lg-heading {
+      font-size: 5.2rem; }
+    #contact .sm-heading {
+      font-size: 1.4rem; }
   .boxes {
     width: 100%;
     display: grid;

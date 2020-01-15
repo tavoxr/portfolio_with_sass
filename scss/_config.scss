@@ -69,7 +69,7 @@ $black:rgb(146, 142, 142);
 
 //Media Query Mixins
 @mixin mediaSm {
-    @media screen and (max-width:500px){
+    @media screen and (max-width:560px){
         @content;
         
     }

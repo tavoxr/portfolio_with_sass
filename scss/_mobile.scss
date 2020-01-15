@@ -80,45 +80,96 @@
 
 //Smartphones
 @include mediaSm{
-    main{
-        align-items: center;
-        text-align: center;
-        // overflow: scroll;
+
+    html{
+        height: 100%;
+        margin: 0;
         
-    &#home h1{
-        margin-top: 10vh;
-        font-size: 4em;
     }
     
-}
+    body{
+        @include background;
+        background: $primary-color;
+        background-attachment: fixed;
+        background-size: cover;
+       height: 100%;
+        color: set-text-color($primary-color);
+        
+          margin: 0;
+          font-family: 'Segoe UI', 'Segoe UI', Tahoma,
+           Geneva, Verdana, sans-serif;
+           line-height: 1.5;
+    }
 
+    main{
+        // align-items: center;
+        // text-align: center;
+        // overflow: scroll;
 
-
-html{
-    height: 100%;
+        
+    // &#home h1{
+    //     margin-top: 10vh;
+    //     font-size: 4em;
+    // }
+    width: 100%;
+    padding: 0;
     margin: 0;
+    height: 100%;
+    font-size: 4em;
+    // grid-template-columns: 1fr;
+     display: flex;
+        flex-flow: column;
+        // justify-content: center;
+        align-items: center;
+    // background: rebeccapurple;
+    overflow: scroll;
+
+    .lg-heading{
+        margin: 30px;
+        margin-top: 10vh;
+        font-size: 5.3rem;
+        text-align: center;
+        // display: flex;
+        // flex-flow: column;
+        // justify-content: center;
+        // align-items: center;
+        // background: red;
+       
+    }
+
+    .sm-heading{
+        font-size: 1.5rem;
+        padding: 10px 20px;
+        margin-top: 15px;
+        margin: 35px;
+        
+    }
+
+    .icons{
+        margin-top:1rem;
+        font-size: 1.3rem;
+        a{
+            padding: 0.4rem;
+
+            &:hover{
+                color: $secondary-color;
+                @include easeOut();
+            }
+        }
+    }
+
     
 }
 
-body{
-    @include background;
-    background: $primary-color;
-    background-attachment: fixed;
-    background-size: cover;
-   height: 100%;
-    color: set-text-color($primary-color);
-    
-      margin: 0;
-      font-family: 'Segoe UI', 'Segoe UI', Tahoma,
-       Geneva, Verdana, sans-serif;
-       line-height: 1.5;
-  }
+
+
+
 
 /*-------------------MENU--------*/
 .menu-btn{
     
-    right: 18px;
-    top:35px;
+    right: 20px;
+    top:27px;
 }
 .menu{
 
@@ -164,19 +215,20 @@ body{
 
 /*------------------ABOUT ME----------------*/
 
-#about{
-    .lg-heading{
-        font-size: 5.3rem;
-    }
-    .sm-heading{
-        font-size: 1.4rem;
-    }
-}
+// #about{
+//     .lg-heading{
+//         font-size: 5.3rem;
+//     }
+//     .sm-heading{
+//         font-size: 1.4rem;
+//     }
+// }
 
 
 .about-info{
+    width: 80%;
     display: grid;
-    gap: 30px ;
+    gap: 10px ;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2,auto);
     grid-template-areas: 
@@ -210,7 +262,7 @@ body{
     font-size: 1.2rem;
     padding: 7px;
     border-radius: 10px;
-   
+    margin-bottom: 20px;
     background: rgba(83, 83, 83, 0.3);
     
 }
@@ -251,44 +303,44 @@ body{
 }
 
 
-#work{
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    font-size: 4em;
-    grid-template-columns: 1fr;
-    // background: rebeccapurple;
-    overflow: scroll;
+// #work{
+//     width: 100%;
+//     padding: 0;
+//     margin: 0;
+//     height: 100%;
+//     font-size: 4em;
+//     grid-template-columns: 1fr;
+//     // background: rebeccapurple;
+//     overflow: scroll;
 
-    .lg-heading{
-        margin: 30px;
-        margin-top: 10vh;
-        font-size: 5.3rem;
-        text-align: center;
-        // display: flex;
-        // flex-flow: column;
-        // justify-content: center;
-        // align-items: center;
-        // background: red;
+//     .lg-heading{
+//         margin: 30px;
+//         margin-top: 10vh;
+//         font-size: 5.3rem;
+//         text-align: center;
+//         // display: flex;
+//         // flex-flow: column;
+//         // justify-content: center;
+//         // align-items: center;
+//         // background: red;
        
-    }
+//     }
 
-    .sm-heading{
-        font-size: 1.4rem;
-        padding: 0;
-        margin: 30px;
+//     .sm-heading{
+//         font-size: 1.4rem;
+//         padding: 0;
+//         margin: 30px;
         
-    }
+//     }
     
-}
+// }
 
 
 
 
 
 .projects-center {
-    width: 80%;
+    width: 78%;
   
     // max-width: 1170px;
     // display: grid;
@@ -318,12 +370,13 @@ body{
       border-radius: 9px;
       background: rgba(lighten($primary-color,2),0.6);
     //   height: 300px;
-      
+     
       padding: 7px;
 
       h3,h4{
           font-weight: 500;
           font-size: 1rem;
+          margin-bottom: 8px;
           
       }
       display: flex;
@@ -367,34 +420,34 @@ body{
 /*-----------------CONTACT-----------------*/
 
 
-#contact{
-height: 100%;
-width: 100%;
-padding: 0;
-margin: 0;
-height: 100%;
-    overflow: scroll;
+// #contact{
+// height: 100%;
+// width: 100%;
+// padding: 0;
+// margin: 0;
+// height: 100%;
+//     overflow: scroll;
 
-    .lg-heading{
-        margin: 30px;
-        margin-top: 10vh;
-        font-size: 5.1rem;
-        text-align: center;
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-        // background: red;
+//     .lg-heading{
+//         margin: 30px;
+//         margin-top: 10vh;
+//         font-size: 5.1rem;
+//         text-align: center;
+//         display: flex;
+//         flex-flow: column;
+//         justify-content: center;
+//         align-items: center;
+//         // background: red;
        
-    }
+//     }
 
-    .sm-heading{
-        font-size: 1.4rem;
-        padding: 0;
-        margin: 30px;
+//     .sm-heading{
+//         font-size: 1.4rem;
+//         padding: 0;
+//         margin: 30px;
         
-    }
-  }
+//     }
+//   }
 .boxes{
     width: 100%;
     display: grid;

@@ -681,13 +681,14 @@ main {
       margin: 30px;
       margin-bottom: 0;
       margin-top: 10vh;
-      font-size: 4.5rem;
+      font-size: 4.8rem;
       text-align: center;
-      line-height: 4rem; }
+      line-height: 4.8rem; }
     main .sm-heading {
       font-size: 1.2rem;
       padding: 10px 10px;
-      margin: 20px 35px 30px 35px; }
+      margin: 20px 35px 30px 35px;
+      text-align: center; }
     main .icons {
       margin-top: 1rem;
       font-size: 1.1rem; }
@@ -698,16 +699,16 @@ main {
           transition: all 0.5s ease-out; }
   /*----------HOME-------*/
   #home .lg-heading {
-    font-size: 4.2rem;
-    margin-top: 20vh;
+    font-size: 4.4rem;
+    margin-top: 21vh;
     line-height: 4rem; }
   #home .sm-heading {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-bottom: 10px;
     padding: 8px 30px; }
   #home .icons {
     margin-top: 1rem;
-    font-size: 1.1rem; }
+    font-size: 1.2rem; }
     #home .icons a {
       padding: 0.6rem; }
   /*-------------------MENU--------*/

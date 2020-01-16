@@ -113,10 +113,16 @@ main{
 .bio{
     grid-area: bio;
     font-size: 1.5rem;
-    padding-left: 20px;
-    border-radius: 10px;
    
-    background: rgba(83, 83, 83, 0.3);
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    background: rgba(68, 68, 68, 0.7);
+
+    p{
+      text-align:justify;
+
+    }
     
 }
 

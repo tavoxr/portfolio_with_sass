@@ -377,6 +377,7 @@
     .lg-heading{
         font-size: 4.2rem;
         margin-top: 20vh;
+        line-height: 4rem;
     }
 
     .sm-heading{
@@ -404,48 +405,6 @@
     right: 17px;
     top:27px;
 }
-// .menu{
-    
-
-//     &-nav{
-//         // display: flex;
-//         // justify-content: flex-start;
-//         height: 60vh;
-//        transform: translate3d(-100%, 0, 0);
-//     }
-//     .nav-item{
-
-//         margin-top: 8px;
-//         padding: 0;
-//     }
-
-
-//     .nav-link{
-    
-//         font-size: 1.6rem;
-//         padding: 0.6rem 0;
-//         }
-
-//         .menu-branding{
-//             height: 40vh;
-//             transform: translate3d(100%,0,0);
-                 .show{
-                    transform: translate3d(0, 0, 0); 
-                 }
-
-//         .portrait{
-//             width: 170px;
-//             height:170px;
-//         }    
-//     }  
-    
-//     }
-
-    // .menu-nav{
-      
-    //     // font: 24px;
-       
-    // }
 
     ul.menu-nav,
     div.menu-branding {
@@ -476,6 +435,47 @@
         width: 170px;
         height: 170px; 
     }
+
+    .menu{
+    
+
+    &-nav{
+        // display: flex;
+        // justify-content: flex-start;
+        height: 60vh;
+       transform: translate3d(-100%, 0, 0);
+    }
+    .nav-item{
+
+        margin-top: 8px;
+        padding: 0;
+    }
+
+
+    .nav-link{
+    
+        font-size: 1.6rem;
+        padding: 0.6rem 0;
+        }
+
+        .menu-branding{
+            height: 40vh;
+            transform: translate3d(100%,0,0);
+
+
+        .portrait{
+            width: 170px;
+            height:170px;
+        }    
+    }  
+
+    }
+
+.menu-nav{
+
+    // font: 24px;
+
+}
 
 
 /*--------------------END OF MENU----------------------*/

@@ -640,6 +640,9 @@ main {
     border-radius: 10px;
     margin-bottom: 20px;
     background: rgba(83, 83, 83, 0.3); }
+    .bio p {
+      text-align: center;
+      padding: 8px; }
   .skills {
     display: none; }
   /*----------END OF ABOUT-------------- */

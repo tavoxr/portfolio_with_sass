@@ -681,10 +681,11 @@ main {
       margin: 30px;
       margin-bottom: 0;
       margin-top: 10vh;
-      font-size: 4.7rem;
-      text-align: center; }
+      font-size: 4.5rem;
+      text-align: center;
+      line-height: 4rem; }
     main .sm-heading {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       padding: 10px 10px;
       margin: 20px 35px 30px 35px; }
     main .icons {
@@ -735,6 +736,8 @@ main {
     width: 170px;
     height: 170px; }
   .menu-nav {
+    display: flex;
+    justify-content: flex-start;
     height: 60vh;
     transform: translate3d(-100%, 0, 0); }
   .menu .nav-item {
@@ -749,6 +752,8 @@ main {
     .menu .menu-branding .portrait {
       width: 170px;
       height: 170px; }
+  .menu-nav {
+    font: 24px; }
   /*--------------------END OF MENU----------------------*/
   /*------------------ABOUT ME----------------*/
   .about-info {

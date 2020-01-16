@@ -336,8 +336,9 @@
         margin: 30px;
         margin-bottom: 0;
         margin-top: 10vh;
-        font-size: 4.7rem;
+        font-size: 4.5rem;
         text-align: center;
+        line-height: 4rem;
         // display: flex;
         // flex-flow: column;
         // justify-content: center;
@@ -347,7 +348,7 @@
     }
 
     .sm-heading{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         padding: 10px 10px;
         margin: 20px 35px 30px 35px;
         
@@ -440,8 +441,8 @@
     
 
     &-nav{
-        // display: flex;
-        // justify-content: flex-start;
+        display: flex;
+        justify-content: flex-start;
         height: 60vh;
        transform: translate3d(-100%, 0, 0);
     }
@@ -473,7 +474,7 @@
 
 .menu-nav{
 
-    // font: 24px;
+    font: 24px;
 
 }
 

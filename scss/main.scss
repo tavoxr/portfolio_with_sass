@@ -277,9 +277,11 @@ main{
 }
 
 .projects{
-
+ 
   img{
-
+    width: 100%;
+         border: 3px #fff solid;
+           border-radius: 10px;
   }
 }
 // .projects{
@@ -531,4 +533,4 @@ color:#333;
 
 
 
-@import 'mobile';
+// @import 'mobile';
